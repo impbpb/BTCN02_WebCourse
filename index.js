@@ -14,7 +14,7 @@ const bt = $('.butn')
 
 
 function checkNumber(str) {
-    var reg = /^\d+$/;
+    var reg =/^[+-]?\d+(\.\d+)?$/;;
     return reg.test(str);
 }
 
@@ -28,7 +28,7 @@ const app = {
         getNum1.oninput = function(e) {
             if(checkNumber(e.target.value)){
                 notify.innerText = '';
-                that.value1 = parseInt(e.target.value);
+                that.value1 = parseFloat(e.target.value);
             }
             else{
                 notify.innerText = `Giá trị nhập ở ô ${e.target.parentElement.previousElementSibling.textContent} không phải là số.`;
@@ -37,7 +37,7 @@ const app = {
         getNum2.oninput = function(e) {
             if(checkNumber(e.target.value)){
                 notify.innerText = '';
-                that.value2 = parseInt(e.target.value);
+                that.value2 = parseFloat(e.target.value);
             }
             else{
                 notify.innerText = `Giá trị nhập ở ô ${e.target.parentElement.previousElementSibling.textContent} không phải là số.`;
