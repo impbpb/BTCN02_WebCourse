@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <div class="row">
+            <h1>Bé tập tính</h1>
+        </div>
+        <div class="row mb-2" >
+
+            <div class="col-2">Số thứ nhất</div>
+            <div class="col-4">
+                <input class="w-100 ip1" type="" >
+            </div>
+
+            <div class="col">
+                <input class="choose rt rt1" type="radio" value="plus">
+                <label for="choose">Cộng</label>
+
+                <input class="choose rt rt2" type="radio" value="minus">
+                <label for="choose">Trừ</label>
+            </div>
+
+        </div>
+        <div class="row mb-2">
+            <div class="col-2">Số thứ hai</div>
+            <div class="col-4">
+                <input class="w-100 ip2" type="" >
+            </div>
+
+            <div class="col">
+                <input class="choose rt rt3" type="radio" value="multi">
+                <label for="choose">Nhân</label>
+
+                <input class="choose rt rt4" type="radio" value="divide">
+                <label for="choose">Chia</label>
+            </div>
+
+        </div>
+        <div class="row mb-2">
+            <div class="col-2">Kết quả</div>
+            <div class="col-4">
+                <input class="w-100 ip-re" type="" >
+            </div>
+            
+            <div class="col">
+                <button class="butn">Tính</button>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-2">Thông báo</div>
+            <div class="col notif" style="color: red"></div>
+        </div>
+      </div>
+
+      <script src="./index.js"></script>
+</body>
+</html>
